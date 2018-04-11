@@ -1,0 +1,15 @@
+nav {
+    background: crimson;
+    color: white;
+  }
+
+li{
+  color: white;
+}
+.nav navbar-nav{
+  color: coral
+}
+
+.text{
+  color: darksalmon;
+}

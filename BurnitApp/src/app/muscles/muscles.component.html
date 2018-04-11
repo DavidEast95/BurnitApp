@@ -1,0 +1,55 @@
+<div class='panel panel-primary'>
+ 
+    <div class='panel-body'>
+        <div class='row'>
+            <div class='col-md-2'>Search by technique name:</div>
+            <div class='col-md-4'>
+                <input type='text'
+                [(ngModel)]= 'listFilter' />
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-6'>
+                <h3>Exercises to build Muscle: {{listFilter}}</h3>
+            </div>
+        </div>
+        <div class='table-responsive'>
+            <table class='table' > 
+                <thead>
+                    <tr>
+                        <th>
+                            <button class='btn' (click) = 'toggleImage()'>
+                                {{showImage ? 'Hide' : 'Show'}} Image
+                            </button>
+                        </th>
+                        <th>Exercise Name</th>
+                        <th>Time</th>
+                        <th>Intensity</th>
+                        <th>Steps</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr  *ngFor='let technique of filteredTechniques'>
+                    <td>
+                      <img *ngIf='showImage' 
+                      [src]='technique.imageUrl'[title]='technique.techniqueName'
+                      [style.width.px] = 'imageWidth'
+                      [style.height.px] = 'imageHeight'
+                      [style.margin.px] = 'imageMargin'>
+                    </td>
+                    <td>{{ technique.techniqueName }}</td>
+                    <td>{{ technique.instructions }}</td>
+                    <td>{{ technique.time | currency:'EUR': true:'1.2-2' }}</td>
+                    <td><app-star-rating [rating]= 'technique.starRating'></app-star-rating></td>
+                  <td *ngIf='showInstructions' >
+                  </td>
+                   </tr>
+                </tbody>
+            </table>
+           
+        </div>
+        
+    </div>
+  </div>
+  

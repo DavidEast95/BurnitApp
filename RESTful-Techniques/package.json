@@ -1,0 +1,32 @@
+{
+  "name": "restfulapi-techniques",
+  "version": "1.0.0",
+  "description": "api to call techniques from MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Restful",
+    "API",
+    "Technique"
+  ],
+  "author": "David East",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "nodemon": "^1.12.5"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.6"
+  }
+}

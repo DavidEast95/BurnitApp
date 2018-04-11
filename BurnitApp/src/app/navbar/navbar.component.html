@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home">
+      <img alt="logo" src="https://cdn3.iconfinder.com/data/icons/workouts/500/push_up-512.png" width="60" height="40">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+ <!-- <li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/home"></a></li> -->
+ <li><a class="text" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/discover">Discover</a></li>
+  <li><a class="text" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/loseFat">Burn Fat</a></li>
+  <li><a class="text" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/buildMuscle">Build Muscle</a></li>
+
+  <li><a class="text" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/contact">Contact Us</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+  <li class="nav navbar-nav navbar-right"><a class="text" routerLinkActive="active" *ngIf="!userLoggedIn()" routerLink="/login">Login</a></li>
+  <li class="nav navbar-nav navbar-right"><a class="text" routerLinkActive="active" *ngIf="!userLoggedIn()" routerLink="/signup">Register</a></li>
+
+</ul>
+
+</div>
+</div>
+</nav>

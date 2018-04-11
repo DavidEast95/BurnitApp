@@ -1,0 +1,15 @@
+#bannerimage {
+    width: 100%;
+    background-image: url(http://www.coachderick.com/wp-content/uploads/herbalife-fast-exercise-banner.jpg);
+    height: 500px; 
+    background-color: purple;
+    background-position: left;
+  }
+
+  h1{
+    text-align: center;
+  }
+  
+  body {
+    background-color: coral;
+  }

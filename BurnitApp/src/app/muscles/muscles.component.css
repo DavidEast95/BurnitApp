@@ -1,0 +1,33 @@
+button{
+    background-color: rgba(255, 94, 0, 0.856);
+    color: white;
+    
+}
+
+th{
+    /* background-color: rgba(255, 94, 0, 0.856); */
+}
+
+.table>tbody>tr>td{
+    border-top: 1px solid #c30e27;
+}
+
+
+/* .message {
+    display: inline-block;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+} */
+.panel-primary {
+    border-color: #337ab7;
+    background-color: aliceblue;
+}
